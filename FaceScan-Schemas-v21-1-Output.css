@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 15.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d}
+    p.p3 {margin: 0.0px 0.0px 15.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #1d1d1d; -webkit-text-stroke: #1d1d1d; background-color: #ffffff}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; background-color: #ffffff}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">.code-snippet {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background-color: #f5f5f5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-left: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-right: 45px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-top: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: relative;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.code-snippet pre {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.code-snippet code {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>font-family: "Courier New", Monospace;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #555;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.copy-button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background-color: #FFFFFF00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #d1d1d1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 5px 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-decoration: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top: 7px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right: 10px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.copy-button:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-color: #FFFFFF00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color: #2607E7;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.copy-success {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #2607E7;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>right: 45px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family: "Arial", sans-serif;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;div class="code-snippet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;pre class="code-snippet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>&lt;code&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s2">{</span><span class="s1"><br>
+</span><span class="s2">   "$schema": "http://json-schema.org/draft-07/schema#",</span><span class="s1"><br>
+</span><span class="s2">   "type": "object",</span><span class="s1"><br>
+</span><span class="s2">   "description": "Schema of a FaceScan result. Extends 'schema.sdk.result.json'.",</span><span class="s1"><br>
+</span><span class="s2">   "properties": {</span><span class="s1"><br>
+</span><span class="s2">       "id": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Unique identifier of the scan result, e.g. the AttemptID for BodyScan or MeasurementID for FaceScan.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "string"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "uid": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Unique identifier of the User ID, as authorized.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "string"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "date": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Unix timestamp of when the scan result was returned.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "integer"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "type": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Indicate result scan type. E.g. 'body', 'face', etc...",</span><span class="s1"><br>
+</span><span class="s2">           "type": "string",</span><span class="s1"><br>
+</span><span class="s2">           "enum": [</span><span class="s1"><br>
+</span><span class="s2">               "body",</span><span class="s1"><br>
+</span><span class="s2">               "face",</span><span class="s1"><br>
+</span><span class="s2">               "derma"</span><span class="s1"><br>
+</span><span class="s2">           ]</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "ver": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Result schema version. Currently '21.1' as base version.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "string"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "miscData": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Optional misc data as provided by the app when scan is initiated. For example, can be used for expense tracking.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "object"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "kg_ent_weight": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Weight entered at the time of scan, in kilograms.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "cm_ent_height": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Height entered at the time of scan, in centimeters.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "enum_ent_sex": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "The biological sex of the user, as they have entered.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "string",</span><span class="s1"><br>
+</span><span class="s2">           "enum": [</span><span class="s1"><br>
+</span><span class="s2">               "male",</span><span class="s1"><br>
+</span><span class="s2">               "female"</span><span class="s1"><br>
+</span><span class="s2">           ]</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "yr_ent_age": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "The age of the user, in years, as they have entered.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "integer"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "bool_ent_bloodPressureMed": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Boolean flag to indicate if the user has taken blood pressure medication today, as they have entered. A value of 'false' means that the user has not taken blood pressure medication today. A value of 'true' means that the user has taken blood pressure medication today.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "boolean"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "bool_ent_hypertension": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Boolean flag to indicate if the user has hypertension, as they have entered. A value of 'false' means that the user does not have hypertension. A value of 'true' means that the user does have hypertension.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "boolean"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "bool_ent_smoker": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Boolean flag to indicate if the user is a smoker, as they have entered. A value of 'false' means that the user does not smoke. A value of 'true' means the user does smoke.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "boolean"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "enum_ent_diabetic": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "Indicates if the user has diabetes (and if so, what type), as they have entered. A value of 'no' means that the user does not have diabetes. A value of 'type1' means that the user has type 1 diabetes. A value of 'type2' means that the user has type 2 diabetes.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "string",</span><span class="s1"><br>
+</span><span class="s2">           "enum": [</span><span class="s1"><br>
+</span><span class="s2">               "no",</span><span class="s1"><br>
+</span><span class="s2">               "type1",</span><span class="s1"><br>
+</span><span class="s2">               "type2"</span><span class="s1"><br>
+</span><span class="s2">           ]</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "hz_raw_heartRate": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "HEART_RATE. Heart Rate in Hertz (Hz - beats per second)",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "sdnn_raw_heartRateVariability": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "HRV_SDNN. Standard Deviation of NN intervals (SDNN) is a measure of Heart Rate Variability (HRV). NN intervals refer to beat-to-beat intervals. It is the time interval between each heartbeat. SDNN is the standard deviation of the time intervals between each heartbeat, expressed in milliseconds (ms).",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "bpm_raw_heartRateIrregular": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "IHB_COUNT. The number of missing heartbeats within a minute.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "mmHg_raw_bloodPressureDiastolic": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BP_DIASTOLIC. Diastolic blood pressure is the amount of pressure in your brachial arteries when your heart muscle is relaxed, measured in millimeters of mercury (mmHg). Diastolic blood pressure levels: Below 60mmHg is considered hypotensive; 60-89mmHg is normal; 90mmHg and above is hypertensive. If you fall on the hypotensive side, you may want to consult a doctor. If you fall on the hypertensive side, you may want to make adjustments to your lifestyle involving more exercise, healthy eating (less salt, no caffeine, no alcohol), and meditation to reduce stress, you may also want to consult a doctor.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "mmHg_raw_bloodPressureSystolic": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BP_SYSTOLIC. Systolic blood pressure is the peak pressure in your brachial arteries during the contraction of your heart muscle, measured in millimeters of mercury (mmHg). Systolic blood pressure levels: Below 90mmHg is considered hypotensive; 90-139mmHg is is normal; 140mmHg and above is hypertensive. If you fall on the hypotensive side, you may want to consult a doctor. If you fall on the hypertensive side, you may want to make adjustments to your lifestyle involving more exercise, healthy eating (less salt, no caffeine, no alcohol), and meditation to reduce stress, you may also want to consult a doctor.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "percent_raw_cardiovascularDiseaseRisk": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BP_CVD. Cardiovascular Disease Risk is the likelihood (expressed in percentage) for you to experience a cardiovascular disease (heart attack, stroke, or peripheral artery disease) within the next 10 years. This risk score is based upon the Framingham Method and derived from an algorithm developed based on data from prospective studies that followed up participants in terms of their cardiovascular health for over ten years.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "percent_raw_heartAttackRisk": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BP_HEART_ATTACK. Heart Attack Risk is the likelihood (expressed in percentage) for you to experience a heart attack within the next 10 years. This risk score is based upon the Framingham Method and derived from an algorithm developed based on data form prospective studies that followed up participants in terms of their cardiovascular health for over ten years.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "percent_raw_strokeRisk": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BP_STROKE. Stroke Risk is the likelihood (expressed in percentage) for you to experience a stroke within the next 10 years. This risk score is based upon the Framingham Method, and derived from an algorithm developed based on data from prospective studies that followed up participants in terms of their cardiovascular health for over ten years.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "db_raw_cardiacWorkload": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BP_RPP. Cardiac Workload, or more precisely myocardial workload, is a measure of the stress put on the heart muscle. Cardiac Workload can be calculated using the formula: Heart Rate (bpm) x Systolic Blood Pressure (mmHg). When measured at rest, this index can be used as an indicator of cardiovascular health. For example, a person who exercises regularly may have lower cardiac workload than another person who has a sedentary lifestyle. During intense physical exercise, your cardiac workload may increase, but should decrease post-exercise.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "secs_raw_vascularCapacity": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BP_TAU. Vascular Capacity, or Tau, is a measure of the elasticity of your blood vessels. Vascular Capacity can be calculated using the formula: R (Vascular Resistance) x C (Arterial Compliance) When measured at rest, this index can be used as an indicator of cardiovascular health as it is strongly correlated with vascular stiffness. A person with a high Tau has better vascular health than a person with a low Tau. Also, certain transient activities and physiological events can lead to immediate changes in Tau (e.g., drinking alcohol, smoking).",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "bpm_raw_breathingRate": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BR_BPM. Breathing rate in breathes per minute (bpm). Measurable Range: 9-40bpm (0.15-0.67Hz).",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       },</span><span class="s1"><br>
+</span><span class="s2">       "hz_raw_breathingRate": {</span><span class="s1"><br>
+</span><span class="s2">           "description": "BR_HERTZ. Breathing rate in breathes per second (Hz). Measurable Range: 0.15-0.67Hz.",</span><span class="s1"><br>
+</span><span class="s2">           "type": "number"</span><span class="s1"><br>
+</span><span class="s2">       }</span><span class="s1"><br>
+</span><span class="s2">   },</span><span class="s1"><br>
+</span><span class="s2">   "required": [</span><span class="s1"><br>
+</span><span class="s2">       "id",</span><span class="s1"><br>
+</span><span class="s2">       "uid",</span><span class="s1"><br>
+</span><span class="s2">       "date",</span><span class="s1"><br>
+</span><span class="s2">       "type",</span><span class="s1"><br>
+</span><span class="s2">       "ver"</span><span class="s1"><br>
+</span><span class="s2">   ]</span><span class="s1"><br>
+</span><span class="s2">}</span></p>
+<p class="p3"><span class="s1">‍</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/code&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/pre&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button class="copy-button"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;path d="M6 16C5.45 16 4.97933 15.8043 4.588 15.413C4.196 15.021 4 14.55 4 14V2C4 1.45 4.196 0.979 4.588 0.587C4.97933 0.195667 5.45 0 6 0H15C15.55 0 16.021 0.195667 16.413 0.587C16.8043 0.979 17 1.45 17 2V14C17 14.55 16.8043 15.021 16.413 15.413C16.021 15.8043 15.55 16 15 16H6ZM6 14H15V2H6V14ZM2 20C1.45 20 0.979 19.8043 0.587 19.413C0.195667 19.021 0 18.55 0 18V5C0 4.71667 0.0960001 4.479 0.288 4.287C0.479333 4.09567 0.716667 4 1 4C1.28333 4 1.521 4.09567 1.713 4.287C1.90433 4.479 2 4.71667 2 5V18H12C12.2833 18 12.521 18.096 12.713 18.288C12.9043 18.4793 13 18.7167 13 19C13 19.2833 12.9043 19.5207 12.713 19.712C12.521 19.904 12.2833 20 12 20H2Z" fill="currentColor"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="copy-success"&gt;Copied!&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+</body>
+</html>
