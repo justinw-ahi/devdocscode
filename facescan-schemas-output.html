@@ -189,3 +189,22 @@
   </button>
   <div class="copy-success">Copied!</div>
 </div>
+
+
+<!-- JavaScript to enable the copy button in code snippets -->
+<script>
+const copyButtons = document.querySelectorAll('.copy-button');
+const successMessages = document.querySelectorAll('.copy-success');
+
+for (let i = 0; i < copyButtons.length; i++) {
+  copyButtons[i].addEventListener('click', () => {
+    const codeSnippet = copyButtons[i].parentElement.querySelector('.code-snippet');
+    const text = codeSnippet.textContent;
+    navigator.clipboard.writeText(text);
+    successMessages[i].style.display = 'inline';
+    setTimeout(() => {
+      successMessages[i].style.display = 'none';
+    }, 2000);
+  });
+}
+</script>
