@@ -54,37 +54,120 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "description": "Schema for BodyScan options parameter, as passed to setup().",
+    "description": "Schema of a BodyScan result. Extends 'schema.sdk.result.json'.",
     "properties": {
+        "id": {
+            "description": "Unique identifier of the scan result, e.g. the AttemptID for BodyScan or MeasurementID for FaceScan.",
+            "type": "string"
+        },
+        "uid": {
+            "description": "Unique identifier of the User ID, as authorized.",
+            "type": "string"
+        },
+        "date": {
+            "description": "Unix timestamp of when the scan result was returned.",
+            "type": "integer"
+        },
+        "type": {
+            "description": "Indicate result scan type. E.g. 'body', 'face', etc...",
+            "type": "string",
+            "enum": [
+                "body",
+                "face",
+                "derma"
+            ]
+        },
+        "ver": {
+            "description": "Result schema version. Currently '21.1' as base version.",
+            "type": "string"
+        },
         "miscData": {
             "description": "Optional misc data as provided by the app when scan is initiated. For example, can be used for expense tracking.",
-            "type": "object"
+            "type":"object"
         },
         "kg_ent_weight": {
-            "description": "Weight entered at the time of scan, in kilograms. Minimum = 16kg; Maximum = 300kg.",
-            "type": "number",
-            "minimum": 16,
-            "maximum": 300
+            "description": "Weight entered at the time of scan, in kilograms.",
+            "type":"number"
         },
         "cm_ent_height": {
-            "description": "Height entered at the time of scan, in centimeters. Minimum = 50cm; Maximum = 255cm.",
-            "type": "number",
-            "minimum": 50,
-            "maximum": 255
+            "description": "Height entered at the time of scan, in centimeters.",
+            "type":"number"
         },
         "enum_ent_sex": {
             "description": "The biological sex of the user, as they have entered.",
-            "type": "string",
+            "type":"string",
             "enum": [
                 "male",
                 "female"
             ]
+        },
+        "cm_raw_waist": {
+            "description": "Waist measurement. Sample value, app to use as backup if smoothing was not applied (persistence delegate instance not supplied).",
+            "type":"number"
+        },
+        "cm_adj_waist": {
+            "description": "Waist measurement. Adjusted (i.e. smoothed) value, app to use for the waist value.",
+            "type":"number"
+        },
+        "cm_raw_inseam": {
+            "description": "Inseam measurement. Sample value, app to use as backup if smoothing was not applied (persistence delegate instance not supplied).",
+            "type":"number"
+        },
+        "cm_adj_inseam": {
+            "description": "Inseam measurement. Adjusted (i.e. smoothed) value, app to use for the inseam value.",
+            "type":"number"
+        },
+        "cm_raw_hips": {
+            "description": "Hips measurement. Sample value, app to use as backup if smoothing was not applied (persistence delegate instance not supplied).",
+            "type":"number"
+        },
+        "cm_adj_hips": {
+            "description": "Hips measurement. Adjusted (i.e. smoothed) value, app to use for the hips value.",
+            "type":"number"
+        },
+        "cm_raw_thigh": {
+            "description": "Thigh measurement. Sample value, app to use as backup if smoothing was not applied (persistence delegate instance not supplied).",
+            "type":"number"
+        },
+        "cm_adj_thigh": {
+            "description": "Thigh measurement. Adjusted (i.e. smoothed) value, app to use for the thigh value.",
+            "type":"number"
+        },
+        "cm_raw_chest": {
+            "description": "Chest measurement. Sample value, app to use as backup if smoothing was not applied (persistence delegate instance not supplied).",
+            "type":"number"
+        },
+        "cm_adj_chest": {
+            "description": "Chest measurement. Adjusted (i.e. smoothed) value, app to use for the chest value.",
+            "type":"number"
+        },
+        "percent_raw_bodyFat": {
+            "description": "Total body fat measurement. Sample value, app to use as backup if smoothing was not applied (persistence delegate instance not supplied).",
+            "type":"number"
+        },
+        "percent_adj_bodyFat": {
+            "description": "Total body fat measurement. Adjusted (i.e. smoothed) value, app to use for the total body fat percentage value.",
+            "type":"number"
+        },
+        "kg_raw_weightPredict": {
+            "description": "Weight prediction measurement. Sample value, app to use as backup if smoothing was not applied (persistence delegate instance not supplied).",
+            "type":"number"
+        },
+        "kg_adj_weightPredict": {
+            "description": "Weight prediction measurement. Adjusted (i.e. smoothed) value, app to use for the weight prediction value.",
+            "type":"number"
+        },
+        "ml_gen_fitness": {
+            "description": "A value required to help with the generation of 3D mesh.",
+            "type":"number"
         }
     },
     "required": [
-        "kg_ent_weight",
-        "cm_ent_height",
-        "enum_ent_sex"
+        "id",
+        "uid",
+        "date",
+        "type",
+        "ver"
     ]
 }
 
