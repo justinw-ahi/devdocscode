@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<style>
+.code-snippet {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 45px;
+  padding-top: 6px;
+  position: relative;
+}
+.code-snippet pre {
+  padding: 0;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+.code-snippet code {
+	font-family: "Courier New", Monospace;
+	color: #555;
+}
+.copy-button {
+  background-color: #FFFFFF00;
+  border: none;
+  color: #d1d1d1;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+.copy-button:hover {
+    background-color: #FFFFFF00;
+    color: #2607E7;
+}
+.copy-success {
+  position: absolute;
+  display: none;
+  color: #2607E7;
+  font-size: 12px;
+  top: 15px;
+  right: 45px;
+  font-family: "Arial", sans-serif;
+}
+</style>
+
+<div class="code-snippet">
+  <pre class="code-snippet">
+  	<code> 
+/*
+//  myfiziq-common-sdk-style-variables.css
+//
+//  Copyright (c) 2018-2021 AHI. All rights reserved.
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+*/
+
+/***************************************************************************************/
+                                /* Global Colors */
+/***************************************************************************************/
+@mfzCommonSDKColorFeature: #FF5621;
+@mfzCommonSDKColorFeature-dark: #FF5621;
+@mfzCommonSDKColorBlack: systemBlack;
+@mfzCommonSDKColorWhite: systemWhite;
+@mfzCommonSDKColorTransparent: clear;
+@mfzCommonSDKColorSeparator: separator;
+@mfzCommonSDKColorOverlay: rgba(0, 0, 0, 0.85);
+@mfzCommonSDKColorActivityIndicator: #DADADA;
+/*  Numeric colour number system is lightest is always 1 and darkest is always highest value*/
+@mfzCommonSDKColorGray1: systemGray5;
+@mfzCommonSDKColorGray1-dark: systemGray;
+@mfzCommonSDKColorGray2: systemGray4;
+@mfzCommonSDKColorGray2-dark: systemGray2;
+@mfzCommonSDKColorGray3: systemGray3;
+@mfzCommonSDKColorGray3-dark: systemGray3;
+@mfzCommonSDKColorGray4: systemGray2;
+@mfzCommonSDKColorGray4-dark: systemGray4;
+@mfzCommonSDKColorGray5: systemGray;
+@mfzCommonSDKColorGray5-dark: systemGray5;
+@mfzCommonSDKColorGray6: systemGray;
+@mfzCommonSDKColorGray6-dark: systemGray6;
+/***************************************************************************************/
+                                /* Background Colors */
+/***************************************************************************************/
+@mfzCommonSDKColorBackground: secondarySystemBackground;
+@mfzCommonSDKColorBackground-dark: systemGray6;
+@mfzCommonSDKColorBackgroundSecondary: systemBackground;
+@mfzCommonSDKColorBackgroundSecondary-dark: systemBackground;
+@mfzCommonSDKColorBackgroundTertiary: systemBackground;
+@mfzCommonSDKColorBackgroundTertiary-dark: @mfzCommonSDKColorGray5-dark;
+/***************************************************************************************/
+                                /* Border Colors */
+/***************************************************************************************/
+@mfzCommonSDKColorBorder: @mfzCommonSDKColorGray5;
+@mfzCommonSDKColorBorder-dark: @mfzCommonSDKColorGray1-dark;
+@mfzCommonSDKColorBorderActive: @mfzCommonSDKColorFeature;
+@mfzCommonSDKColorBorderActive-dark: @mfzCommonSDKColorFeature-dark;
+/***************************************************************************************/
+                                /* Text Colors */
+/***************************************************************************************/
+@mfzCommonSDKTextColorPrimary: label;
+@mfzCommonSDKTextColorPrimary-dark: label;
+@mfzCommonSDKTextColorSecondary: secondaryLabel;
+@mfzCommonSDKTextColorSecondary-dark: secondaryLabel;
+@mfzCommonSDKTextColorTertiary: @mfzCommonSDKColorWhite;
+@mfzCommonSDKTextColorTertiary-dark: @mfzCommonSDKColorWhite;
+@mfzCommonSDKTextColorFeature: @mfzCommonSDKColorFeature;
+@mfzCommonSDKTextColorFeature-dark: @mfzCommonSDKColorFeature-dark;
+@mfzCommonSDKTextColorPlaceholder: placeholderText;
+@mfzCommonSDKTextColorPlaceholder-dark: placeholderText;
+@mfzCommonSDKTableViewCellSectionHeaderTextColor: @mfzCommonSDKTextColorSecondary;
+@mfzCommonSDKTableViewCellSectionHeaderTextColor-dark: @mfzCommonSDKTextColorSecondary-dark;
+@mfzCommonSDKSegmentControlTextColor: @mfzCommonSDKColorGray5;
+@mfzCommonSDKSegmentControlTextColor-dark: @mfzCommonSDKColorGray1-dark;
+@mfzCommonSDKSegmentControlTextColorSelected: @mfzCommonSDKColorBlack;
+@mfzCommonSDKSegmentControlTextColorSelected-dark: @mfzCommonSDKColorWhite;
+@mfzCommonSDKInputViewCellTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKInputViewCellTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKInputViewCellPlaceholderTextColor: @mfzCommonSDKTextColorPlaceholder;
+@mfzCommonSDKInputViewCellPlaceholderTextColor-dark: @mfzCommonSDKTextColorPlaceholder-dark;
+@mfzCommonSDKButtonTitleColor: @mfzCommonSDKColorWhite;
+@mfzCommonSDKButtonTitleColor-dark: @mfzCommonSDKColorWhite;
+@mfzCommonSDKPickerViewTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKPickerViewTextColor-dark: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKPickerTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKPickerTextColor-dark: @mfzCommonSDKTextColorPrimary;
+/* CollectionView Card View Cell */
+@mfzCommonSDKCollectionViewGalleryHeaderViewTitleTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewGalleryHeaderViewTitleTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementTitleTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementTitleTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementValueTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementValueTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardDateTextColor: @mfzCommonSDKTextColorSecondary;
+@mfzCommonSDKCollectionViewCellCardDateTextColor-dark: @mfzCommonSDKTextColorSecondary-dark;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueDescriptionTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueDescriptionTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardSecondaryTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardSecondaryTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardCategoryTextColor: @mfzCommonSDKTextColorTertiary;
+@mfzCommonSDKCollectionViewCellCardCategoryTextColor-dark: @mfzCommonSDKTextColorTertiary-dark;
+/***************************************************************************************/
+                                /* Component Colors */
+/***************************************************************************************/
+@mfzCommonSDKSegmentControlTintColorSelected: @mfzCommonSDKColorWhite;
+@mfzCommonSDKSegmentControlTintColorSelected-dark: @mfzCommonSDKColorGray1-dark;
+@mfzCommonSDKSegmentControlBackgroundColor: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKSegmentControlBackgroundColor-dark: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKCellSeparatorLineColor: @mfzCommonSDKColorSeparator;
+@mfzCommonSDKCellSeparatorLineColor-dark: @mfzCommonSDKColorSeparator;
+/* Input Table View  */
+@mfzCommonSDKInputViewCellCursorColor: @mfzCommonSDKColorFeature;
+@mfzCommonSDKInputViewCellCursorColor-dark: @mfzCommonSDKColorFeature-dark;
+@mfzCommonSDKInputViewCellBackgroundColor: @mfzCommonSDKColorBackgroundSecondary;
+@mfzCommonSDKInputViewCellBackgroundColor-dark: @mfzCommonSDKColorBackgroundTertiary-dark;
+@mfzCommonSDKAlertViewBackgroundColor: @mfzCommonSDKColorBackgroundSecondary;
+@mfzCommonSDKAlertViewBackgroundColor-dark: @mfzCommonSDKColorBackgroundTertiary-dark;
+@mfzCommonSDKAlertOverlayColor: rgba(0, 0, 0, 0.85);
+@mfzCommonSDKAlertOverlayColor-dark: rgba(0, 0, 0, 0.85);
+@mfzCommonSDKAlertButtonTextColorPrimary: @mfzCommonSDKColorFeature;
+@mfzCommonSDKAlertButtonTextColorPrimary-dark: @mfzCommonSDKColorFeature-dark;
+@mfzCommonSDKAlertTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKAlertTextColor-dark: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKAlertButtonBorderColor: @mfzCommonSDKColorGray4;
+@mfzCommonSDKAlertButtonBorderColor-dark: @mfzCommonSDKColorGray2-dark;
+@mfzCommonSDKSpinnerBackgroundColor: @mfzCommonSDKColorBackground;
+@mfzCommonSDKSpinnerBackgroundColor-dark: @mfzCommonSDKColorBackground-dark;
+@mfzCommonSDKSpinnerColor: @mfzCommonSDKColorFeature;
+@mfzCommonSDKSpinnerColor-dark: @mfzCommonSDKColorFeature-dark;
+@mfzCommonSDKSpinnerActivityViewTintColor: @mfzCommonSDKColorGray3;
+@mfzCommonSDKSpinnerActivityViewTintColor-dark: @mfzCommonSDKColorGray3;
+@mfzCommonSDKSpinnerActivityViewBackgroundColor: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKSpinnerActivityViewBackgroundColor-dark: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKMeshOSLegacyLightColor: rgba(25, 25, 25, 1.0);
+@mfzCommonSDKMeshOSLegacyLightColor-dark: rgba(25, 25, 25, 1.0);
+@mfzCommonSDKMeshOSLegacyAmbientColor: rgba(102, 102, 102, 1.0);
+@mfzCommonSDKMeshOSLegacyAmbientColor-dark: rgba(102, 102, 102, 1.0);
+@mfzCommonSDKMeshOSLegacySpecularColor: rgba(102, 102, 102, 1.0);
+@mfzCommonSDKMeshOSLegacySpecularColor-dark: rgba(102, 102, 102, 1.0);
+@mfzCommonSDKMeshLightNonMetalColor: white;
+@mfzCommonSDKMeshLightNonMetalColor-dark: white;
+@mfzCommonSDKMeshLightOneColor: rgba(178, 178, 178, 1.0);
+@mfzCommonSDKMeshLightOneColor-dark: rgba(178, 178, 178, 1.0);
+@mfzCommonSDKMeshLightTwoColor: rgba(229, 229, 229, 1.0);
+@mfzCommonSDKMeshLightTwoColor-dark: rgba(229, 229, 229, 1.0);
+@mfzCommonSDKMeshAmbientColor: rgba(229, 229, 229, 1.0);
+@mfzCommonSDKMeshAmbientColor-dark: rgba(229, 229, 229, 1.0);
+@mfzCommonSDKMeshSpecularColor: rgba(127, 127, 127, 1.0);
+@mfzCommonSDKMeshSpecularColor-dark: rgba(127, 127, 127, 1.0);
+@mfzCommonSDKMeshViewBackgroundColor: @mfzCommonSDKColorBackground;
+@mfzCommonSDKMeshViewBackgroundColor-dark: @mfzCommonSDKColorBackground;
+@mfzCommonSDKMeshViewFrameColor: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKMeshViewFrameColor-dark: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKButtonPrimaryColor: @mfzCommonSDKColorFeature;
+@mfzCommonSDKButtonPrimaryColor-dark: @mfzCommonSDKColorFeature-dark;
+@mfzCommonSDKButtonDisabledGrayColor: @mfzCommonSDKColorGray4;
+@mfzCommonSDKButtonDisabledGrayColor-dark: @mfzCommonSDKColorGray4;
+@mfzCommonSDKButtonWarningYellowColor: #ffae42;
+@mfzCommonSDKButtonWarningYellowColor-dark: #ffae42;
+@mfzCommonSDKButtonErrorRedColor: #cc0000;
+@mfzCommonSDKButtonErrorRedColor-dark: #cc0000;
+@mfzCommonSDKButtonStandardColorEnabled: @mfzCommonSDKButtonPrimaryColor;
+@mfzCommonSDKButtonStandardColorEnabled-dark: @mfzCommonSDKButtonPrimaryColor-dark;
+@mfzCommonSDKButtonStandardColorDisabled: @mfzCommonSDKButtonDisabledGrayColor;
+@mfzCommonSDKButtonStandardColorDisabled-dark: @mfzCommonSDKButtonDisabledGrayColor;
+@mfzCommonSDKButtonDangerColorEnabled: @mfzCommonSDKButtonErrorRedColor;
+@mfzCommonSDKButtonDangerColorEnabled-dark: @mfzCommonSDKButtonErrorRedColor;
+@mfzCommonSDKButtonWarningColorEnabled: @mfzCommonSDKButtonWarningYellowColor;
+@mfzCommonSDKButtonWarningColorEnabled-dark: @mfzCommonSDKButtonWarningYellowColor;
+@mfzCommonSDKButtonColorDisabled: @mfzCommonSDKButtonDisabledGrayColor;
+@mfzCommonSDKButtonColorDisabled-dark: @mfzCommonSDKButtonDisabledGrayColor;
+@mfzCommonSDKButtonActivityIndicatorColor: @mfzCommonSDKColorWhite;
+@mfzCommonSDKButtonActivityIndicatorColor-dark: @mfzCommonSDKColorWhite;
+@mfzCommonSDKAccessoryViewDismissButtonColor: @mfzCommonSDKColorFeature;
+@mfzCommonSDKAccessoryViewDismissButtonColor-dark: @mfzCommonSDKColorFeature-dark;
+@mfzCommonSDKPickerBackgroundColor: @mfzCommonSDKColorBackgroundSecondary;
+@mfzCommonSDKPickerBackgroundColor-dark: @mfzCommonSDKColorBackground-dark;
+@mfzCommonSDKPickerDividerColor: @mfzCommonSDKColorGray2;
+@mfzCommonSDKPickerDividerColor-dark: @mfzCommonSDKColorGray3;
+@mfzCommonSDKPickerTopBorderColor: @mfzCommonSDKColorSeparator;
+@mfzCommonSDKPickerTopBorderColor-dark: @mfzCommonSDKColorSeparator;
+@mfzCommonSDKPickerBottomBorderColor: @mfzCommonSDKColorSeparator;
+@mfzCommonSDKPickerBottomBorderColor-dark: @mfzCommonSDKColorSeparator;
+@mfzCommonSDKCollectionViewCellCardBackgroundColor: @mfzCommonSDKColorBackground;
+@mfzCommonSDKCollectionViewCellCardBackgroundColor-dark: @mfzCommonSDKColorBackground-dark;
+@mfzCommonSDKCollectionViewCellCardCellBackgroundColor: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKCollectionViewCellCardCellBackgroundColor-dark: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKCollectionViewCellCardCellContainerViewBackgroundColor: @mfzCommonSDKColorBackgroundSecondary;
+@mfzCommonSDKCollectionViewCellCardCellContainerViewBackgroundColor-dark: @mfzCommonSDKColorBackgroundTertiary-dark;
+@mfzCommonSDKBasicCollectionViewCellBorderColor: @mfzCommonSDKColorGray1;
+@mfzCommonSDKBasicCollectionViewCellBorderColor-dark: @mfzCommonSDKColorGray3;
+@mfzCommonSDKLoadingCellActivityIndicatorColor: @mfzCommonSDKColorActivityIndicator;
+@mfzCommonSDKLoadingCellActivityIndicatorColor-dark: @mfzCommonSDKColorActivityIndicator;
+@mfzCommonSDKLoadingFooterViewActivityIndicatorColor: @mfzCommonSDKColorActivityIndicator;
+@mfzCommonSDKLoadingFooterViewActivityIndicatorColor-dark: @mfzCommonSDKColorActivityIndicator;
+/***************************************************************************************/
+                                /* Typography */
+/***************************************************************************************/
+@mfzCommonSDKFontFamilyRegular: system;
+@mfzCommonSDKFontFamilyBold: systemBold;
+@mfzCommonSDKFontFamilyMedium: systemMedium;
+@mfzCommonSDKFontFamilySemiBold: systemSemiBold;
+/* The font sizes can be found on Figma and aim to reflect the font sizes found in the Apple Guidelines.
+ https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/
+ */
+ @mfzCommonSDKFontSizeLargeTitle: 34.0;
+ @mfzCommonSDKFontSizeTitle1: 28.0;
+ @mfzCommonSDKFontSizeTitle3: 20.0;
+ @mfzCommonSDKFontSizeBody: 17.0;
+ @mfzCommonSDKFontSizeSubhead: 15.0;
+ @mfzCommonSDKFontSizeFootnote: 13.0;
+ @mfzCommonSDKFontSizeCaption1: 12.0;
+ @mfzCommonSDKFontSizeCaption2: 11.0;
+/* This is used as the descriptive title label font for the labels of input view cells */
+@mfzCommonSDKTableViewCellFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeBody;
+/* This is used for either the descriptive input title label font for the placeholder/input view font of input view cells */
+@mfzCommonSDKTableViewCellInputFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeBody;
+/* This is used for placeholder font */
+@mfzCommonSDKTableViewCellInputPlaceholderFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeBody;
+/* This is used for the section headers throughout the app. */
+@mfzCommonSDKTableViewSectionHeaderFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeFootnote;
+@mfzCommonSDKInputViewCellFont: @mfzCommonSDKTableViewCellInputFont;
+@mfzCommonSDKTitleFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeTitle3;
+@mfzCommonSDKBodyFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeBody;
+@mfzCommonSDKTitleBoldFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeTitle3;
+@mfzCommonSDKButtonFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeBody;
+@mfzCommonSDKCollectionViewGalleryHeaderViewTitleFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeBody;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementTitleFont: @mfzCommonSDKFontFamilyBold 14;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementValueFont: @mfzCommonSDKFontFamilyRegular 14;
+@mfzCommonSDKCollectionViewCellCardDateFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeCaption1;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeTitle1;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueFont-4-inch-device: @mfzCommonSDKFontFamilyRegular 21;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueWeightFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeLargeTitle;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueWeightDescriptionFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeTitle1;
+@mfzCommonSDKCollectionViewCellCardSecondaryFont: @mfzCommonSDKFontFamilyBold 14;
+@mfzCommonSDKCollectionViewCellCardSecondaryFont-4-inch-device: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeCaption2;
+@mfzCommonSDKCollectionViewCellCardCategoryFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeCaption1;
+@mfzCommonSDKCollectionViewCellCardLoadingTitleLabelFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeCaption2;
+@mfzCommonSDKCollectionViewCellCardLoadingDetailLabelFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeCaption2;
+@mfzCommonSDKPickerDismissButtonFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeBody;
+/***************************************************************************************/
+                                /* Additional Style Variables */
+/***************************************************************************************/
+@mfzCommonSDKCornerRadiusSmall: 4.0;
+@mfzCommonSDKCornerRadiusLarge: 8.0;
+@mfzCommonSDKPickerAccessoryHeight: 40;
+/***************************************************************************************/
+                                /* Special Features */
+/***************************************************************************************/
+@mfzCommonMathValueDecimals: 1;
+@mfzCommonMathPickerValueDecimals: 1;
+@mfzCommonMathDeltaIncreaseSymbol: "+";
+@mfzCommonMathDeltaDecreaseSymbol: "-";
+/*  If all three are set to NO or YES, tbf cells will be used as the default.
+    If @mfzCommonSDKCollectionViewCellCardViewDisplayWeightCellsOnly or @mfzCommonSDKCollectionViewCellCardViewDisplayTBFCellsOnly are set to YES,
+    then only the YES option will be used.
+ */
+@mfzCommonSDKCollectionViewCellCardViewDisplayWeightWhenNoTbf: YES;
+@mfzCommonSDKCollectionViewCellCardViewDisplayWeightCellsOnly: NO;
+@mfzCommonSDKCollectionViewCellCardViewDisplayTBFCellsOnly: NO;
+@mfzCommonSDKCollectionViewCellCardDisplayDefaultProcessingMeasurementTimeString: YES;
+/* Collection Cell Sort Order - Default is NO - Latest at the Top */
+@mfzCommonSDKCollectionViewCellCardSortOrderLatestAtBottom: NO;
+/* Date in format "dd/MM/yyyy" */
+/* Date picker is geared towards age, but using prefix style, it can be altered for date specific requirements. */
+@mfzCommonSDKPickerDateMinDate: "01/01/1900";
+@mfzCommonSDKPickerDateYoungestAge: 4;
+@mfzCommonSDKPickerDateDefaultAge: 25;
+/* Total Body Fat Category colors */
+@mfzCommonSDKTBFCategoryLeanColor: rgb(89.25, 198.9, 249.9);
+@mfzCommonSDKTBFCategoryHealthyColor: rgb(76.5, 216.75, 99.45);
+@mfzCommonSDKTBFCategoryOverweightColor: rgb(255, 204, 0);
+@mfzCommonSDKTBFCategoryObeseColor: rgb(255, 86.7, 33.15);
+@mfzCommonSDKTBFCategoryUnknownColor: systemGray;
+		</code>
+  </pre>
+  <button class="copy-button">
+    <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M6 16C5.45 16 4.97933 15.8043 4.588 15.413C4.196 15.021 4 14.55 4 14V2C4 1.45 4.196 0.979 4.588 0.587C4.97933 0.195667 5.45 0 6 0H15C15.55 0 16.021 0.195667 16.413 0.587C16.8043 0.979 17 1.45 17 2V14C17 14.55 16.8043 15.021 16.413 15.413C16.021 15.8043 15.55 16 15 16H6ZM6 14H15V2H6V14ZM2 20C1.45 20 0.979 19.8043 0.587 19.413C0.195667 19.021 0 18.55 0 18V5C0 4.71667 0.0960001 4.479 0.288 4.287C0.479333 4.09567 0.716667 4 1 4C1.28333 4 1.521 4.09567 1.713 4.287C1.90433 4.479 2 4.71667 2 5V18H12C12.2833 18 12.521 18.096 12.713 18.288C12.9043 18.4793 13 18.7167 13 19C13 19.2833 12.9043 19.5207 12.713 19.712C12.521 19.904 12.2833 20 12 20H2Z" fill="currentColor"/>
+		</svg>
+  </button>
+  <div class="copy-success">Copied!</div>
+</div>
+
+
+<!-- JavaScript to enable the copy button in code snippets -->
+<script>
+const copyButtons = document.querySelectorAll('.copy-button');
+const successMessages = document.querySelectorAll('.copy-success');
+
+for (let i = 0; i < copyButtons.length; i++) {
+  copyButtons[i].addEventListener('click', () => {
+    const codeSnippet = copyButtons[i].parentElement.querySelector('.code-snippet');
+    const text = codeSnippet.textContent;
+    navigator.clipboard.writeText(text);
+    successMessages[i].style.display = 'inline';
+    setTimeout(() => {
+      successMessages[i].style.display = 'none';
+    }, 2000);
+  });
+}	
+</script>
