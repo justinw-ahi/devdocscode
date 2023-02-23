@@ -53,29 +53,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "description": "Schema of a FaceScan result. Extends 'schema.sdk.result.json'.",
-  "properties": {
-      "id": {
-          "description": "Unique identifier of the scan result, e.g. the AttemptID for BodyScan or MeasurementID for FaceScan.",
-          "type": "string"
-      },
-      "uid": {
-          "description": "Unique identifier of the User ID, as authorized.",
-          "type": "string"
-      },
-      "date": {
-          "description": "Unix timestamp of when the scan result was returned.",
-          "type": "integer"
-      },
-      "type": {
-          "description": "Indicate result scan type. E.g. 'body', 'face', etc...",
-          "type": "string",
-          "enum": [
-              "body",
-              "face",
-              "derma"
-          ]
-     
+  
     
 		</code>
   </pre>
