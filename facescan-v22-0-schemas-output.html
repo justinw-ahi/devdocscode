@@ -117,10 +117,10 @@
           "type": "boolean"
       },
       "enum_ent_diabetic": {
-          "description": "Indicates if the user has diabetes (and if so, what type), as they have entered. A value of 'no' means that the user does not have diabetes. A value of 'type1' means that the user has type 1 diabetes. A value of 'type2' means that the user has type 2 diabetes.",
+          "description": "Indicates if the user has diabetes (and if so, what type), as they have entered. A value of 'none' means that the user does not have diabetes. A value of 'type1' means that the user has type 1 diabetes. A value of 'type2' means that the user has type 2 diabetes.",
           "type": "string",
           "enum": [
-              "no",
+              "none",
               "type1",
               "type2"
           ]
@@ -171,10 +171,6 @@
       },
       "bpm_raw_breathingRate": {
           "description": "BR_BPM. Breathing rate in breathes per minute (bpm). Measurable Range: 9-40bpm (0.15-0.67Hz).",
-          "type": "number"
-      },
-      "hz_raw_breathingRate": {
-          "description": "BR_HERTZ. Breathing rate in breathes per second (Hz). Measurable Range: 0.15-0.67Hz.",
           "type": "number"
       }
   },
